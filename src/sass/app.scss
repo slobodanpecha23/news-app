@@ -5,10 +5,101 @@
 
     .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height: 60px;
-        background-color: blueviolet;
+        height: 70px;
+        background-color: $button-color;
+        margin-bottom: 20px;
+        position: relative;
+
+        .header-title {
+            color: $color-white;
+            font-size: 40px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            font-family: "Bonheur Royale", cursive;
+            margin-left: 20px;
+        }
+
+        .searchForm {
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            // margin: 20px auto;
+
+            input {
+                font-size: 20px;
+                box-sizing: border-box;
+                transition: all 0.5s;
+            }
+
+            .input-1 {
+                background: $color-white;
+                width: 350px;
+                height: 40px;
+                border: none;
+                outline: none;
+                padding: 0 25px;
+                border-radius: 25px 0 0 25px;
+                &::placeholder {
+                    color: $button-color;
+                    font-weight: 200;
+                    font-size: 16px;
+                }
+            }
+
+            .input-2 {
+                border-radius: 0 25px 25px 0;
+                height: 40px;
+                width: 100px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: $search-color;
+                color: $color-white;
+
+                &:hover {
+                    background: $search-hover-color;
+                }
+            }
+        }
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-button {
+            width: 150px;
+            margin: 0 15px;
+            text-align: center;
+            outline: none;
+            display: block;
+            border: solid 1px $button-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            padding: 16px 30px;
+            border-radius: 30px;
+            background: $color-white;
+            color: $button-color;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+
+        .header-button:hover,
+        .header-button:focus {
+            background: $button-color;
+            color: $color-white;
+        }
+
+        .header-button:active {
+            background: $color-white;
+            color: $button-color;
+        }
     }
 }
 
