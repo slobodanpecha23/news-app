@@ -1,15 +1,16 @@
 @import "./variables.scss";
 
 .app-container {
-    width: 100%;
+    width: 100% !important;
 
     .header {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 70px;
         background-color: $button-color;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0 !important;
         position: relative;
 
         .header-title {

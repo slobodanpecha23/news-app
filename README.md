@@ -1,4 +1,4 @@
-#News App
+# News App
 
 # Getting Started with Create React App
 
